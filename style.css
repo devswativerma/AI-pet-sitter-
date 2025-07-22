@@ -2,7 +2,22 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f7f7f7;
+  background-image: url('pet2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #333;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent; 
+  z-index: -1;
 }
 
 nav {
@@ -21,20 +36,23 @@ nav {
   padding-top: 100px;
   padding: 8rem 2rem;
   text-align: center;
-  background: #ececec;
+  color: #000000;
 }
 
 .section {
   padding: 6rem 2rem;
   text-align: center;
-  background: #fff;
+  background: transparent !important; /* force fully transparent */
   margin-bottom: 2rem;
+  border-radius: 10px;
+  margin: 2rem;
+  color: #000000;
 }
 
 footer {
   text-align: center;
   padding: 2rem;
-  background: #222;
+  background: transparent;
   color: white;
 }
 
@@ -42,6 +60,7 @@ footer {
 .fade-section {
   opacity: 0;
   transform: translateY(50px);
+  background: transparent !important;
 }
 
 /* Button styles */

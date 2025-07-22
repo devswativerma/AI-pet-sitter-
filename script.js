@@ -23,6 +23,7 @@ gsap.utils.toArray(".fade-section").forEach(section => {
   });
 });
 
+  
 // Button hover pulse animation
 const buttons = document.querySelectorAll(".pulse-button");
 
@@ -49,3 +50,8 @@ buttons.forEach(button => {
     });
   });
 });
+
+  
+
+
+
