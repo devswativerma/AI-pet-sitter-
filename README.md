@@ -1,2 +1,2 @@
 # AI-pet-sitter-
- In the future, astronauts bring pets to space. LunaNap ensures pets are calm and happy aboard spacecraft using AI simulations and ambient moonlight environments.
+An AI Pet Sitter is a smart, automated system designed to care for pets when their owners are away, using Artificial Intelligence (AI).
