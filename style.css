@@ -1,0 +1,83 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top, #1d1f27, #0b0d13);
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+.content {
+  max-width: 700px;
+}
+
+.animated-text {
+  font-size: 3.5rem;
+  font-weight: bold;
+  background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ADEDE, #ff6ec4);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: wave 6s ease infinite;
+}
+
+/* CSS animation using @keyframes */
+@keyframes wave {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+p {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: #4ADEDE;
+  color: #0b0d13;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #36c4c4;
+}
+/* 
+.animated-text {
+  font-size: 3.5rem;
+  font-weight: bold;
+  background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ADEDE, #ff6ec4);
+  background-size: 600% 600%;
+
+  /* Clip background to the text */
+  background-clip: text;              /* Standard syntax */
+  -webkit-background-clip: text;      /* For WebKit browsers (Chrome, Safari) */
+
+  /* Make text transparent to see the background */
+  color: transparent;
+  -webkit-text-fill-color: transparent; /* Required for Safari */
+  
+  animation: wave 6s ease infinite;
+} */
