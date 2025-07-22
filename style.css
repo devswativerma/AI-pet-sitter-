@@ -1,83 +1,62 @@
-/* General Reset */
-* {
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
 }
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background: radial-gradient(circle at top, #1d1f27, #0b0d13);
-  color: white;
-  height: 100vh;
-  overflow: hidden;
+nav {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transform: translateY(-100%);
 }
 
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  padding-top: 100px;
+  padding: 8rem 2rem;
+  text-align: center;
+  background: #ececec;
+}
+
+.section {
+  padding: 6rem 2rem;
+  text-align: center;
+  background: #fff;
+  margin-bottom: 2rem;
+}
+
+footer {
   text-align: center;
   padding: 2rem;
+  background: #222;
+  color: white;
 }
 
-.content {
-  max-width: 700px;
+/* Initial fade state */
+.fade-section {
+  opacity: 0;
+  transform: translateY(50px);
 }
 
-.animated-text {
-  font-size: 3.5rem;
-  font-weight: bold;
-  background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ADEDE, #ff6ec4);
-  background-size: 600% 600%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: wave 6s ease infinite;
+/* Button styles */
+.pulse-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
 }
 
-/* CSS animation using @keyframes */
-@keyframes wave {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+.pulse-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
 }
-
-p {
-  margin: 1rem 0;
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: #cccccc;
-}
-
-.cta-button {
-  display: inline-block;
-  padding: 0.8rem 2rem;
-  background-color: #4ADEDE;
-  color: #0b0d13;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 30px;
-  transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #36c4c4;
-}
-/* 
-.animated-text {
-  font-size: 3.5rem;
-  font-weight: bold;
-  background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ADEDE, #ff6ec4);
-  background-size: 600% 600%;
-
-  /* Clip background to the text */
-  background-clip: text;              /* Standard syntax */
-  -webkit-background-clip: text;      /* For WebKit browsers (Chrome, Safari) */
-
-  /* Make text transparent to see the background */
-  color: transparent;
-  -webkit-text-fill-color: transparent; /* Required for Safari */
-  
-  animation: wave 6s ease infinite;
-} */
